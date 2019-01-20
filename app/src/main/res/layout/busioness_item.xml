@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_busioness"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/busioness_name"
+        android:text="我是商家"
+        app:layout_constraintTop_toTopOf="@id/cb_busioness"
+        app:layout_constraintBottom_toBottomOf="@id/cb_busioness"
+        app:layout_constraintLeft_toRightOf="@id/cb_busioness"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goods_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/busioness_name"
+        android:layout_marginTop="5dp"
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+</android.support.constraint.ConstraintLayout>
